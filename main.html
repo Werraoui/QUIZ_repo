@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz - Main</title>
+    <link href="index.css" rel="stylesheet"/>
+</head>
+<body>
+    <header>
+        <div style="max-width: 920px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 0 12px;">
+            <div id="score" aria-live="polite"><strong>Score:</strong> <span id="score-value">0</span></div>
+            <div id="timer" aria-live="polite"><strong>Time:</strong> <span id="timer-value">30</span>s</div>
+        </div>
+    </header>
+
+    <div class="container">
+        <h2 id="question-text">Preparing your quiz…</h2>
+        <div id="options" style="display: grid; gap: 10px; margin-top: 8px;">
+            <!-- Options will be injected here (e.g., radio buttons) -->
+        </div>
+        <button id="submit-btn" style="margin-top: 12px;" disabled>Submit</button>
+        <div id="final-score" aria-live="polite"></div>
+    </div>
+
+    <footer>
+        <p>Good luck!</p>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
+

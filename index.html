@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QCM PAGE</title>
+    <link href="index.css" rel="stylesheet"/>
+</head>
+<body>
+    <header>
+        <h1>QCM PAGE</h1>
+    </header>
+    <div class="container">
+    <label for="select1">Select Number of Questions:</label>
+    <select id="select1">
+        <option value="" disabled selected>Choose...</option>
+        <option value="5">5</option>
+        <option value="10">10</option>
+        <option value="15">15</option>
+        <option value="20">20</option>
+    </select>
+
+    <label for="select2">Select Category:</label>
+    <select id="select2" aria-describedby="category-status">
+        <option value="" disabled selected>Loading categories…</option>
+        
+    </select>
+    <span id="category-status" aria-live="polite" style="display:block; margin-top: 4px;"></span>
+
+    <label for="select3">Select Difficulty:</label>
+    <select id="select3">
+        <option value="" disabled selected>Choose...</option>
+        <option value="any">Any</option>
+        <option value="easy">Easy</option>
+        <option value="medium">Medium</option>
+        <option value="hard">Hard</option>
+    </select>
+
+    <label for="select4">Select Type:</label>
+    <select id="select4">
+        <option value="" disabled selected>Choose...</option>
+        <option value="any">Any</option>
+        <option value="multiple">Multiple Choice</option>
+        <option value="boolean">True / False</option>
+    </select>
+
+    <button id ="select5" type="button">Start the Quiz</button>
+    </div>
+    <footer>
+        <p>Copyright 2025 QCM PAGE</p>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
